@@ -4,13 +4,19 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body h1{
+  text-align: center;
+  margin: 7px 0px 5px 0px;
+}
 
 main.page1 {
-    width: 82vw;
-    padding-top: 6rem;
-    min-height: calc(100vh - (6rem + 4rem));
-    max-width: var(--max-width);
-    margin: 0 auto;
+  width: 89vw;
+  display: grid;
+  padding-top: 1.3rem;
+  min-height: calc(98vh - (2rem + 12rem));
+  max-width: var(--max-width);
+  margin: 0 auto;
+
 }
 
 .col-50 {
@@ -18,30 +24,60 @@ main.page1 {
     width: 48%;
     padding: 10px;
 }
+.col-100{
+  float: left;
+  justify-content: normal;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.col-100 .tripType{
+
+}
+
 
 img {
     width: 100%;
     display: block;
     object-fit: cover;
 }
+.caption{
+  margin-top: 0.6rem;
+  font-size: 15px;
+  font-style: italic;
+  font-family: sans-serif;
+}
 
 .btn-delhi {
-    width: 100%;
-    padding: 10px 11px;
-    border-radius: 4px;
-    outline: none;
-    background: cornsilk;
-    color: black;
-    box-shadow: 8px 0px 7px 1px firebrick;
-    margin-bottom: 27px;
+  width: 79%;
+  padding: 19px 4px;
+  border-radius: 4px;
+  margin-right: 2.3rem;
+  outline: none;
+  border: 1px solid rgb(159, 168, 180);
+  background: #64a1ff57;
+  box-shadow: 9px 18px 34px 9px #6b65bd54;
 }
 
 .btn-delhi a {
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-    letter-spacing: 2px;
-    font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.btn-delhi:hover{
+  width: 79%;
+  padding: 19px 4px;
+  border-radius: 4px;
+  margin-right: 2.3rem;
+  transition: 1s;
+  border: 1px solid rgb(95, 99, 104);
+  background: #2067c6;
+  box-shadow: 9px 18px 34px 9px #6b65bda8;
+}
+.btn-delhi:hover a{
+  color: #ffffff;
 }
 
 div.iconsTab {
@@ -57,6 +93,20 @@ div.iconsTab {
     .col-50 {
         width: 100%;
     }
+
+}
+.Airpot{
+  display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    cursor: pointer;
+
+}
+.navigationLink{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 21px 0px 21px;
 
 }
 

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdventureIndia</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-o+3hgx3gok3j6D8yl19D7q5KR8+lcA7onbgg4Qz7Xx0fkaV+PmvNaUG4tRf6B4Jo" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4275bdfb84.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,22 +23,33 @@
         </div>
     </header>
     <nav>
-        <ul class="navigations">
-            <li><a href="#" class="logo">Home <i class="fas fa-home"></i></a></li>
-
+        <div class="logo">
+            <a href="#">Home <i class="fas fa-home"></i></a>
+        </div>
+        <div class="menu-icon" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navigations" id="nav-links">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">North <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="newDelhi.html" class="dc">New Delhi</a>
+                    <a href="ladakh.html" class="dc">Ladakh</a>
+                    <a href="bhopal.html" class="dc">Bhopal</a>
+                </div>
+            </li>
             <li><a href="#">South</a></li>
             <li><a href="#">East</a></li>
             <li><a href="#">West</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">North</a>
-                <div class="dropdown-content">
-                    <a href="newDelhi.html" class="dc">New Delhi</a>
-                    <a href="newDelhi.html" class="dc">Ladakh</a>
-                    <a href="newDelhi.html" class="dc">Bhopal</a>
-                </div>
-            </li>
+
         </ul>
     </nav>
+    <script>
+        function toggleNav() {
+            var navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
     <section>
         <div class="bannerHome">
             <div class="col-50">
